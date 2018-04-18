@@ -1,0 +1,10 @@
+AÇIKLAMA: filename kýsmý da imread dekiyle ayný girilmeli
+
+
+Algoritma PseudoCode:
+	1. Resim üzerinde preprocessing yap.(Sharpenin yap ve iþlemleri hsv uzayýnda yap)
+	2. Tekerlekleri bul (Görüntü üzerindeki yuvarlak nesneleri bul(findcircle) fonksiyonu ile)
+	3. Ortalama olarak bütün arabalarýn tekerleklerinden yaklaþýk 30 pixel yukarýsýný seed point olarak ata.
+	(Deneysel olarak da bu iyi bir çözüm vermektedir.)
+	4. RegionGrowing fonksiyonuna seed point i threshold deðerini (Her bir resim için farklý deðerler alýnmasý gerekti)ve resmi gönder.
+	5. Aracý plot yardýmýyla segment et.
